@@ -1,0 +1,1 @@
+This repo spins up a 3-node Kraft controller quorum and 2 additional nodes that can be used to add to the quorum. A broker node that connects to the 3-node Kraft quorum is also spun up for clients to send and receive data. 
