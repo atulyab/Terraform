@@ -1,0 +1,16 @@
+confluent.license=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjb250cm9sLWNlbnRlciIsIm5iNCI6IjE2ODc1NDI2NzQiLCJtb25pdG9yaW5nIjp0cnVlLCJsaWNlbnNlVHlwZSI6IkVudGVycHJpc2UiLCJpc3MiOiJDb25mbHVlbnQiLCJpYXQiOjE2ODc1MDM2MDAsImV4cCI6MTc1MzE2NzYwMCwiYXVkIjoiMDA2NFUwMDAwMHJXQ054UUFPIn0=.GWS0UtnoLajxaULN5P5-JjqZq-b7szam9HqQ5d4oWmz1KcQU9wev5ir6XFxCUK9zds9XjYaPt8Om7BnYd-W1b-RxKareziFiLD_s_wD1wifrOUMDQId7Y9odXXgwhEDRUwMV12x57sGxsB2rOZ3U9ZGTrRNxNIMHwz-6agwNWvQYnMlwMDW2iJONd-NxEkvEIjyjA5-G6n0w34RSxLl1_23jG50Qlq4H1_FtpX3Y7AlKwR-sYNCGW5k9vg6YCyWZIyjuM3-WzF3_x5PPGmPsFOARS3f2YPp4t2y2X_wkPTyV-raffrbn18rlbe__LqUncqomcUfBBlU-LRiwE76qDQ
+
+process.roles=controller
+node.id=${node_id}
+controller.quorum.voters=${quorum_voters}
+
+controller.quorum.bootstrap.servers=${controller_quorum_bootstrap_servers}
+
+# Bind on all interfaces, advertise the hostname
+listeners=CONTROLLER://0.0.0.0:9093
+advertised.listeners=CONTROLLER://${advertised_host}:9093
+
+listener.security.protocol.map=CONTROLLER:PLAINTEXT
+controller.listener.names=CONTROLLER
+log.dirs=/var/lib/kafka/kraft-controller-log
+
